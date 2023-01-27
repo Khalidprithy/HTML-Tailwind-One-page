@@ -3,7 +3,7 @@
 
 
 ## 🔗 Links
-[client](https://majestic-blancmange-726fdb.netlify.app/)
+[Live site](https://majestic-blancmange-726fdb.netlify.app/)
 
 
 ## Technology used
