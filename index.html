@@ -24,7 +24,7 @@
 </head>
 
 <body>
-    <header class="bg-white dark:bg-gray-500 text-gray-800 sticky top-0 z-30">
+    <header class="bg-white dark:bg-gray-500 text-gray-800 shadow-md sticky top-0 z-30">
         <div class="navbar px-1 md:px-10">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -36,17 +36,17 @@
                         </svg>
                     </label>
                     <ul tabindex="0"
-                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 transition duration-300 ease-in-out">
+                        class="menu menu-compact dropdown-content mt-3 ml-2 p-2 shadow bg-gray-600 text-gray-50 rounded-lg w-32 transition duration-300 ease-in-out">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#product">Product</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="flex items-center">
+                <a href="#home" class="flex items-center cursor-pointer">
                     <img class="w-14" src="images/logo.png" alt="">
-                    <h4 class="text-2xl font-mono">The Home Studio</h4>
-                </div>
+                    <h4 class="text-2xl font-mono hidden md:block">The Home Studio</h4>
+                </a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-xl font-semibold transition duration-300 ease-in-out">
@@ -59,7 +59,7 @@
             <div class="navbar-end relative">
                 <div class="w-32 h-12 bg-gray-500 blur-sm rounded absolute top-1.5 -right-1.5 z-10"></div>
                 <a
-                    class="w-32 h-12 bg-white text-gray-800 hover:bg-gray-800 hover:text-gray-50 font-medium rounded flex items-center justify-center border-2 border-black shadow-lg transition duration-300 ease-in z-30">View
+                    class="w-32 h-12 bg-white text-gray-800 hover:bg-gray-800 hover:text-gray-50 font-medium rounded flex items-center justify-center border-2 border-black shadow md:shadow-lg transition duration-300 ease-in z-30">View
                     Portfolio</a>
             </div>
         </div>
@@ -68,13 +68,13 @@
         <!-- Banner -->
         <section id="home" class="px-1 md:px-10 mt-10 transition duration-300 ease-in-out">
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="flex flex-col items-start justify-center gap-4 p-10 order-2 md:order-1">
-                    <h4 class="text-5xl font-medium">Transform Your Space</h4>
+                <div class="flex flex-col items-start justify-center gap-4 p-3 md:p-10 order-2 md:order-1">
+                    <h4 class="text-3xl md:text-5xl font-medium">Transform Your Space</h4>
                     <p>Welcome to our interior design website, where we specialize in transforming ordinary spaces into
                         extraordinary living environments. Our team of expert designers is here to help you bring your
                         vision to life and create a space that truly reflects your personal style and meets your
                         functional needs.</p>
-                    <div class="flex gap-4">
+                    <div class="w-full flex justify-between md:justify-start items-center gap-4">
                         <a
                             class="w-32 h-12 bg-gray-800 text-gray-50 hover:text-yellow-400 font-medium rounded flex items-center justify-center border shadow-lg border-black dark:border-gray-200 shadow-lg transition duration-300 ease-in z-20">View
                             Services</a>
@@ -103,96 +103,93 @@
         </section>
 
         <!-- services -->
-        <section id="services" class="px-1 md:px-10 mt-10 transition duration-300 ease-in-out">
+        <section id="services" class="px-1 md:px-10 mt-10 transition duration-300 ease-in-out px-2">
             <div class="text-center">
-                <h4 class="text-5xl font-semibold text-gray-900 dark:text-gray-50">What we provide</h4>
-                <p class="font-light mt-4 text-gray-700 dark:text-gray-100">Our interior design services are here to
-                    help
-                    you transform your space <br>
-                    into
-                    a
-                    reflection of your
-                    personal style and functional
-                    needs. </p>
+                <h4 class="text-3xl md:text-5xl font-semibold text-gray-900 dark:text-gray-50">What we provide</h4>
+                <p class="text-base md:text-lg font-medium mt-4 text-gray-700 dark:text-gray-100">Our interior design
+                    services are
+                    here to
+                    help you transform your space into a reflection of your personal style and functional needs.
+                </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4">
                 <div
-                    class="flex flex-col items-start justify-between mb-4 border-2 border-gray-400 rounded p-4 mx-auto max-w-[300px] min-h-[350px]">
+                    class="flex flex-col items-start justify-between mb-4 border-2 border-gray-400 rounded p-4 mx-auto w-full md:w-full md:max-w-[300px] min-h-[350px]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="#273746" class="w-10 h-10">
+                        stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
                     </svg>
-                    <h4 class="text-4xl font-semibold">Consultation</h4>
+                    <h4 class="text-3xl md:text-4xl font-semibold">Consultation</h4>
                     <p class="text-sm"> Our initial consultation is the first step in creating your dream space. During
                         this meeting, we'll discuss your design goals, budget, and preferences. We'll also take
                         measurements of your space and give you an estimate for the design plan and services.</p>
-                    <button class="btn btn-link text-gray-800 m-0 p-0">Read More</button>
+                    <button class="btn btn-link text-gray-800 dark:text-gray-50 m-0 p-0">Read More</button>
                 </div>
                 <div
-                    class="flex flex-col items-start justify-between mb-4 bg-gray-800 text-gray-50 border-2 border-gray-400 rounded p-4 mx-auto max-w-[300px] min-h-[350px]">
+                    class="flex flex-col items-start justify-between mb-4 bg-gray-800 text-gray-50 border-2 border-gray-400 rounded p-4 mx-auto w-full md:max-w-[300px] min-h-[350px]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="#273746" class="w-10 h-10">
+                        stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
                     </svg>
 
-                    <h4 class="text-4xl font-semibold">Design Plan</h4>
+                    <h4 class="text-3xl md:text-4xl font-semibold">Design Plan</h4>
                     <p class="text-sm">We will create a comprehensive design plan that includes a detailed floor plan,
                         furniture layout, color scheme, and a selection of materials. This plan will serve as the
                         blueprint for your project and will be used to guide all the decisions that follow.</p>
                     <button class="btn btn-link text-gray-50 m-0 p-0">Read More</button>
                 </div>
                 <div
-                    class="flex flex-col items-start justify-between mb-4 border-2 border-gray-400 rounded p-4 mx-auto max-w-[300px] min-h-[350px]">
+                    class="flex flex-col items-start justify-between mb-4 border-2 border-gray-400 rounded p-4 mx-auto w-full md:max-w-[300px] min-h-[350px]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="#273746" class="w-10 h-10">
+                        stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M7.875 14.25l1.214 1.942a2.25 2.25 0 001.908 1.058h2.006c.776 0 1.497-.4 1.908-1.058l1.214-1.942M2.41 9h4.636a2.25 2.25 0 011.872 1.002l.164.246a2.25 2.25 0 001.872 1.002h2.092a2.25 2.25 0 001.872-1.002l.164-.246A2.25 2.25 0 0116.954 9h4.636M2.41 9a2.25 2.25 0 00-.16.832V12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 12V9.832c0-.287-.055-.57-.16-.832M2.41 9a2.25 2.25 0 01.382-.632l3.285-3.832a2.25 2.25 0 011.708-.786h8.43c.657 0 1.281.287 1.709.786l3.284 3.832c.163.19.291.404.382.632M4.5 20.25h15A2.25 2.25 0 0021.75 18v-2.625c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125V18a2.25 2.25 0 002.25 2.25z" />
                     </svg>
-                    <h4 class="text-4xl font-semibold">Space Planning</h4>
+                    <h4 class="text-3xl md:text-4xl font-semibold">Space Planning</h4>
                     <p class="text-sm">Our team will create a functional and visually pleasing layout for your space.
                         We'll take into account traffic flow, lighting, and focal points to create a space that is both
                         beautiful and functional.</p>
-                    <button class="btn btn-link text-gray-800 m-0 p-0">Plan Now</button>
+                    <button class="btn btn-link text-gray-800 dark:text-gray-50 m-0 p-0">Plan Now</button>
                 </div>
                 <div
-                    class="flex flex-col items-start justify-between mb-4 bg-gray-800 text-gray-50 border-2 border-gray-400 rounded p-4 mx-auto max-w-[300px] min-h-[350px]">
+                    class="flex flex-col items-start justify-between mb-4 bg-gray-800 text-gray-50 border-2 border-gray-400 rounded p-4 mx-auto w-full md:max-w-[300px] min-h-[350px]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="#273746" class="w-10 h-10">
+                        stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
                     </svg>
 
-                    <h4 class="text-4xl font-semibold">Material Selection</h4>
+                    <h4 class="text-3xl md:text-4xl font-semibold">Material Selection</h4>
                     <p class="text-sm">We'll help you select the perfect finishes, fabrics, and materials for your
                         space. From flooring to paint colors, we'll ensure that everything is in line with your design
                         plan and budget</p>
                     <button class="btn btn-link text-gray-50 m-0 p-0">Read More</button>
                 </div>
                 <div
-                    class="flex flex-col items-start justify-between mb-4 border-2 border-gray-400 rounded p-4 mx-auto max-w-[300px] min-h-[350px]">
+                    class="flex flex-col items-start justify-between mb-4 border-2 border-gray-400 rounded p-4 mx-auto w-full md:max-w-[300px] min-h-[350px]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="#273746" class="w-10 h-10">
+                        stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M7.875 14.25l1.214 1.942a2.25 2.25 0 001.908 1.058h2.006c.776 0 1.497-.4 1.908-1.058l1.214-1.942M2.41 9h4.636a2.25 2.25 0 011.872 1.002l.164.246a2.25 2.25 0 001.872 1.002h2.092a2.25 2.25 0 001.872-1.002l.164-.246A2.25 2.25 0 0116.954 9h4.636M2.41 9a2.25 2.25 0 00-.16.832V12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 12V9.832c0-.287-.055-.57-.16-.832M2.41 9a2.25 2.25 0 01.382-.632l3.285-3.832a2.25 2.25 0 011.708-.786h8.43c.657 0 1.281.287 1.709.786l3.284 3.832c.163.19.291.404.382.632M4.5 20.25h15A2.25 2.25 0 0021.75 18v-2.625c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125V18a2.25 2.25 0 002.25 2.25z" />
                     </svg>
-                    <h4 class="text-4xl font-semibold">Project Management</h4>
+                    <h4 class="text-3xl md:text-4xl font-semibold">Project Management</h4>
                     <p class="text-sm">We'll oversee every aspect of your project, from ordering materials to
                         coordinating with contractors. We'll make sure that everything runs smoothly and that the end
                         result meets your expectations.</p>
-                    <button class="btn btn-link text-gray-800 m-0 p-0">Manage</button>
+                    <button class="btn btn-link text-gray-800 dark:text-gray-50 m-0 p-0">Manage</button>
                 </div>
 
                 <div
-                    class="flex flex-col items-start justify-between mb-4 bg-gray-800 text-gray-50 border-2 border-gray-400 rounded p-4 mx-auto max-w-[300px] min-h-[350px]">
+                    class="flex flex-col items-start justify-between mb-4 bg-gray-800 text-gray-50 border-2 border-gray-400 rounded p-4 mx-auto w-full md:max-w-[300px] min-h-[350px]">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="#273746" class="w-10 h-10">
+                        stroke="currentColor" class="w-10 h-10">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
                     </svg>
 
-                    <h4 class="text-4xl font-semibold">Virtual Design</h4>
+                    <h4 class="text-3xl md:text-4xl font-semibold">Virtual Design</h4>
                     <p class="text-sm">During pandemics or other restrictions, we offer virtual design service to allow
                         you to get the same quality of service from the comfort of your home. We can use video
                         conferencing and 3D rendering software to help you visualize and plan your space.</p>
@@ -200,14 +197,16 @@
                 </div>
             </div>
         </section>
+
         <!-- Product -->
         <section id="product" class="px-1 md:px-10 mt-10">
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <div class="flex items-center justify-center">
                     <img src="images/products/products (2).png" alt="">
                 </div>
-                <div class="flex flex-col items-start justify-center gap-4 p-10">
-                    <h4 class="text-4xl font-medium text-gray-900 dark:text-gray-50">Transforming Your Space into a
+                <div class="flex flex-col items-start justify-center gap-4 p-4 md:p-10">
+                    <h4 class="text-3xl md:text-4xl font-medium text-gray-900 dark:text-gray-50">Transforming Your Space
+                        into a
                         Reflection of Your Personal Style
                     </h4>
                     <p class="text-gray-900 dark:text-gray-400">Our team of expert interior designers will work closely
@@ -217,14 +216,15 @@
                         envisioned. Let us help you design the home of your dreams. </p>
                     <div class="flex gap-4">
                         <a
-                            class="w-32 h-12 bg-gray-800 dark:bg-gray-400 text-gray-50 font-medium rounded flex items-center justify-center border shadow-lg border-black shadow-lg transition duration-300 ease-in z-20">Get
+                            class="w-32 h-12 bg-gray-800 dark:bg-gray-400 hover:bg-gray-300 text-gray-50 hover:text-black font-medium rounded flex items-center justify-center border shadow-lg border-black shadow-lg transition duration-300 ease-in z-20">Get
                             Started</a>
                     </div>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="flex flex-col items-start justify-center gap-4 p-10">
-                    <h4 class="text-4xl font-medium text-gray-900 dark:text-gray-50">Creating a Space that Reflects Your
+                <div class="flex flex-col items-start justify-center gap-4 p-4 md:p-10">
+                    <h4 class="text-3xl md:text-4xl font-medium text-gray-900 dark:text-gray-50">Creating a Space that
+                        Reflects Your
                         Personal Taste and Needs</h4>
                     <p class="text-gray-900 dark:text-gray-400">At A Home Studio, we pride ourselves on providing
                         exceptional service and delivering beautiful,
@@ -234,7 +234,7 @@
                         let's make your dream home a reality.</p>
                     <div class="flex gap-4">
                         <a
-                            class="w-32 h-12 bg-gray-800 dark:bg-gray-400 text-gray-50 font-medium rounded flex items-center justify-center border shadow-lg border-black shadow-lg transition duration-300 ease-in z-20">Contact
+                            class="w-32 h-12 bg-gray-800 dark:bg-gray-400 hover:bg-gray-300 text-gray-50 hover:text-black font-medium rounded flex items-center justify-center border shadow-lg border-black shadow-lg transition duration-300 ease-in z-20">Contact
                             Us</a>
                     </div>
                 </div>
@@ -246,8 +246,9 @@
                 <div class="flex items-center justify-center">
                     <img src="images/products/products (1).png" alt="">
                 </div>
-                <div class="flex flex-col items-start justify-center gap-4 p-10">
-                    <h4 class="text-4xl font-medium text-gray-900 dark:text-gray-50">Create the Perfect Ambiance with
+                <div class="flex flex-col items-start justify-center gap-4 p-4 md:p-10">
+                    <h4 class="text-3xl md:text-4xl font-medium text-gray-900 dark:text-gray-50">Create the Perfect
+                        Ambiance with
                         Lighting Design
                     </h4>
                     <p class="text-gray-900 dark:text-gray-400">Lighting has the power to transform a space, setting the
@@ -257,14 +258,15 @@
                         pendants, we'll help you create a space that's both beautiful and functional. </p>
                     <div class="flex gap-4">
                         <a
-                            class="w-32 h-12 bg-gray-800 dark:bg-gray-400 text-gray-50 font-medium rounded flex items-center justify-center border shadow-lg border-black shadow-lg transition duration-300 ease-in z-20">Pick
+                            class="w-32 h-12 bg-gray-800 dark:bg-gray-400 hover:bg-gray-300 text-gray-50 hover:text-black font-medium rounded flex items-center justify-center border shadow-lg border-black shadow-lg transition duration-300 ease-in z-20">Pick
                             Lighting</a>
                     </div>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2">
-                <div class="flex flex-col items-start justify-center gap-4 p-10">
-                    <h4 class="text-4xl font-medium text-gray-900 dark:text-gray-50">Bring Your Outdoor Living Space to
+                <div class="flex flex-col items-start justify-center gap-4 p-4 md:p-10">
+                    <h4 class="text-3xl md:text-4xl font-medium text-gray-900 dark:text-gray-50">Bring Your Outdoor
+                        Living Space to
                         Life</h4>
                     <p class="text-gray-900 dark:text-gray-400">Make the most of your outdoor living space with our
                         expert design services. Whether you're looking to create a beautiful patio, an outdoor kitchen,
@@ -274,7 +276,7 @@
                         a space that's truly an extension of your home.</p>
                     <div class="flex gap-4">
                         <a
-                            class="w-32 h-12 bg-gray-800 dark:bg-gray-400 text-gray-50 font-medium rounded flex items-center justify-center border shadow-lg border-black shadow-lg transition duration-300 ease-in z-20">Outdoor
+                            class="w-32 h-12 bg-gray-800 dark:bg-gray-400 hover:bg-gray-300 text-gray-50 hover:text-black font-medium rounded flex items-center justify-center border shadow-lg border-black shadow-lg transition duration-300 ease-in z-20">Outdoor
                             Design</a>
                     </div>
                 </div>
@@ -283,18 +285,18 @@
                 </div>
             </div>
         </section>
+
         <!-- Customer Review -->
         <section id="review" class="mt-10">
             <div class="text-center">
-                <h4 class="text-5xl font-semibold text-gray-900 dark:text-gray-50">Customers Say</h4>
-                <p class="font-light mt-4 text-gray-900 dark:text-gray-300">Browse our customer reviews to see for
+                <h4 class="text-3xl md:text-5xl font-semibold text-gray-900 dark:text-gray-50">Customers Say</h4>
+                <p class="font-light mt-4 text-gray-900 dark:text-gray-300 p-2">Browse our customer reviews to see for
                     yourself what sets us apart and why
                     we're the go-to choice for
                     interior design services.</p>
             </div>
             <div class="bg-gray-900 dark:bg-gray-700">
-
-                <div class="grid grid-cols-1 md:grid-cols-3 px-10 mt-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 px-2 md:px-10 mt-4">
                     <div class="m-6 p-2 rounded">
                         <div class="flex items-center gap-2">
                             <img class="w-10" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="">
@@ -334,87 +336,89 @@
                 </div>
             </div>
         </section>
+
         <!-- States -->
         <section class="mt-10">
             <div class="text-center">
-                <h4 class="text-5xl font-semibold text-gray-900 dark:text-gray-50">Business Statistics</h4>
+                <h4 class="text-3xl md:text-5xl font-semibold text-gray-900 dark:text-gray-50">Business Statistics</h4>
                 <p class="font-light mt-4 text-gray-900 dark:text-gray-300">See the results of our hard work and
                     dedication to delivering exceptional
                     service</p>
             </div>
-            <div class="container mx-auto px-20">
+            <div class="container mx-auto px-5 md:px-20">
                 <div class="flex flex-col w-full" style="cursor: auto;">
                     <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 my-2 w-full">
-                        <div class="metric-card dark:bg-white bg-gray-900 border border-gray-200 dark:border-gray-800 rounded p-4 max-w-72 w-full"
+                        <div class="metric-card dark:bg-white bg-gray-900 border border-gray-200 dark:border-gray-800 rounded p-4 md:max-w-72 w-full"
                             style="cursor: auto;">
                             <a aria-label="YouTube Subscribers" target="_blank" rel="noopener noreferrer"
                                 href="https://stackdiary.com/">
-                                <div class="flex items-center dark:text-gray-900 text-gray-100 text-xl font-semibold"
+                                <div class="flex items-center dark:text-gray-900 text-gray-100 text-xl font-semibold justify-center"
                                     style="cursor: auto;">
                                     On going Projects
                                     <svg class="h-6 w-6 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="#273746">
+                                        viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
                                         </path>
                                     </svg>
                                 </div>
                             </a>
-                            <p class="mt-2 text-3xl font-bold spacing-sm dark:text-black text-white"
+                            <p class="mt-2 text-3xl font-bold spacing-sm dark:text-black text-white text-center"
                                 style="cursor: auto;">56</p>
                         </div>
-                        <div class="metric-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded p-4 max-w-72 w-full"
+                        <div class="metric-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded p-4 md:max-w-72 w-full"
                             style="cursor: auto;">
                             <a aria-label="YouTube Views" target="_blank" rel="noopener noreferrer"
                                 href="https://stackdiary.com/">
-                                <div class="flex items-center text-gray-900 dark:text-gray-100 text-xl font-semibold">
+                                <div
+                                    class="flex items-center justify-center text-gray-900 dark:text-gray-100 text-xl font-semibold">
                                     Completed Projects
                                     <svg class="h-6 w-6 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="#273746" style="cursor: auto;">
+                                        viewBox="0 0 24 24" stroke="currentColor" style="cursor: auto;">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
                                         </path>
                                     </svg>
                                 </div>
                             </a>
-                            <p class="mt-2 text-3xl font-bold spacing-sm text-black dark:text-white"
+                            <p class="mt-2 text-3xl font-bold spacing-sm text-black dark:text-white text-center"
                                 style="cursor: auto;">15</p>
                         </div>
-                        <div class="metric-card dark:bg-white bg-gray-900 border border-gray-200 dark:border-gray-800 rounded p-4 max-w-72 w-full"
+                        <div class="metric-card dark:bg-white bg-gray-900 border border-gray-200 dark:border-gray-800 rounded p-4 md:max-w-72 w-full"
                             style="cursor: auto;">
                             <a aria-label="Unsplash Views" target="_blank" rel="noopener noreferrer"
                                 href="https://stackdiary.com/">
-                                <div class="flex items-center dark:text-gray-900 text-gray-100 text-xl font-semibold"
+                                <div class="flex items-center justify-center dark:text-gray-900 text-gray-100 text-xl font-semibold"
                                     style="cursor: auto;">
                                     Email Subscribers
                                     <svg class="h-6 w-6 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="#273746">
+                                        viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
                                         </path>
                                     </svg>
                                 </div>
                             </a>
-                            <p class="mt-2 text-3xl font-bold spacing-sm dark:text-black text-white"
+                            <p class="mt-2 text-3xl font-bold spacing-sm dark:text-black text-white text-center"
                                 style="cursor: auto;">3,641</p>
                         </div>
 
-                        <div class="metric-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded p-4 max-w-72 w-full"
+                        <div class="metric-card bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded p-4 md:max-w-72 w-full"
                             style="cursor: auto;">
                             <a aria-label="Unsplash Downloads" target="_blank" rel="noopener noreferrer"
                                 href="https://stackdiary.com/">
-                                <div class="flex items-center text-gray-900 dark:text-gray-100 text-xl font-semibold"
+                                <div class="flex items-center justify-center text-gray-900 dark:text-gray-100 text-xl font-semibold"
                                     style="cursor: auto;">
                                     Twitter Followers
                                     <svg class="h-6 w-6 ml-1" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                        viewBox="0 0 24 24" stroke="#273746" style="cursor: auto;">
+                                        viewBox="0 0 24 24" stroke="currentColor" style="cursor: auto;">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                             d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14">
                                         </path>
                                     </svg>
                                 </div>
                             </a>
-                            <p class="mt-2 text-3xl font-bold spacing-sm text-black dark:text-white"
+                            <p class="mt-2 text-3xl font-bold spacing-sm text-black dark:text-white text-center"
                                 style="cursor: auto;">5,412</p>
                         </div>
 
@@ -426,7 +430,8 @@
 
         <!-- Contact -->
         <section id="contact">
-            <h4 class="text-5xl font-semibold text-center mt-10 mb-6 text-gray-900 dark:text-gray-50">Get in touch</h4>
+            <h4 class="text-3xl md:text-5xl font-semibold text-center mt-10 mb-6 text-gray-900 dark:text-gray-50">Get in
+                touch</h4>
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <div class="bg-white dark:bg-gray-200 p-6 text-gray-900 dark:text-gray-700">
                     <div>
@@ -507,12 +512,6 @@
                                 type="email" name="email" id="email">
                         </div>
                         <div class="flex flex-col gap-2">
-                            <label for="phone" class="text-gray-50">Phone</label>
-                            <input
-                                class="text-gray-50 px-2 py-1 bg-gray-800 border border-gray-50 rounded w-full md:w-8/12"
-                                type="number" name="phone" id="phone">
-                        </div>
-                        <div class="flex flex-col gap-2">
                             <label for="message" class="text-gray-50">Message</label>
                             <input
                                 class="text-gray-50 px-2 py-1 h-20 bg-gray-800 border border-gray-50 rounded w-full md:w-8/12"
@@ -520,7 +519,6 @@
                         </div>
                         <input class="btn btn-md btn-outline border hover:border-gray-50 mt-6 w-32 bg-white text-black"
                             type="submit" value="Submit">
-
                     </form>
                 </div>
             </div>
@@ -533,7 +531,7 @@
                     <h2 class="mb-4 text-3xl tracking-tight font-semibold text-gray-900 sm:text-4xl dark:text-white">
                         Sign up for our newsletter</h2>
                     <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">
-                        Stay up to date with the roadmap progress, announcements and exclusive discounts feel free to
+                        Stay up to date with the road-map progress, announcements and exclusive discounts feel free to
                         sign up with your email.</p>
                     <form action="#">
                         <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
@@ -542,7 +540,7 @@
                                     class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email
                                     address</label>
                                 <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="#273746"
+                                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
                                         viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                                         <path
                                             d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
@@ -568,12 +566,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- Contact Us -->
-
-
     </main>
-
 
     <footer class="p-4 bg-white sm:p-6 bg-white dark:bg-gray-500 text-gray-900">
         <div class="md:flex md:justify-between">
@@ -623,10 +616,12 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
-                    href="https://devkbin.netlify.app/" class="hover:underline">Dev.Kbin</a>. All Rights Reserved.
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-300">© 2023 <a
+                    href="https://devkbin.netlify.app/"
+                    class="hover:underline text-orange-500 dark:text-orange-400">Dev.Kbin</a>. All
+                Rights Reserved.
             </span>
-            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+            <div class="flex items-center justify-center mt-4 space-x-6 sm:justify-center sm:mt-0">
                 <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
                     <svg class="w-5 h-5" fill="#273746" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd"
